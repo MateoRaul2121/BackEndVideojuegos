@@ -7,9 +7,9 @@ const bodyParser = require('body-parser')
 
 // conectar a la BD
 //Conexion local
-mongoose.connect('mongodb://127.0.0.1:27017/videojuegos')
+//mongoose.connect('mongodb://127.0.0.1:27017/videojuegos')
 //Conexion ATTLAS
-//mongoose.connect('mongodb+srv://angelaoti21:SWxEXmspNgKUjr6I@games.veprrnb.mongodb.net/videojuegos?retryWrites=true&w=majority&appName=Games')
+mongoose.connect('mongodb+srv://angelaoti21:SWxEXmspNgKUjr6I@games.veprrnb.mongodb.net/videojuegos?retryWrites=true&w=majority&appName=Games')
 .then((x)=>{
       console.log(`Conectado a la base de datos: '${x.connections[0].name}'`)
 })
